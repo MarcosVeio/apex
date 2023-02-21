@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+
+    <script>
+        const id = parseInt(prompt("Digite o código do produto")) // explicar sobre parseInt
+        const value = parseInt(prompt("Digite o valor pago"))
+
+        if (id === 1) {
+            const valueProduct = 12
+            if (value < valueProduct) {
+                alert("Pagamento inferior ao valor do pedido")
+            } else {
+                const calc = value - valueProduct
+                document.write(`Troco da pizza = ${calc}`) // explicar concatenamento
+            }
+        } if (id === 2) {
+            const valueProduct = 4
+            if (value < valueProduct) {
+                alert("Pagamento inferior ao valor do pedido")
+            } else {
+                const calc = value - valueProduct
+                document.write(`Troco do pão de queijo = ${calc}`) // explicar concatenamento
+            }
+        } if (id === 3) {
+            const valueProduct = 16
+            if (value < valueProduct) {
+                alert("Pagamento inferior ao valor do pedido")
+            } else {
+                const calc = value - valueProduct
+                document.write(`Troco do macarrão = ${calc}`) // explicar concatenamento
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
