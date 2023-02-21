@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const productName = prompt("Informa o nome do produto")
+        const productValue = parseFloat(prompt("Informa o valor do produto"))
+        const productType = prompt("Informa o segmento do produto:\n\nVestuário\nEletrônico\nAlimentício")
+
+        switch (productType) {
+            case "Vestuário":
+                document.write(`${productName}, valor final com 5% de desconto: R$${(productValue - (0.05 * productValue)).toFixed(2)}`);
+                break
+            case "Eletrônico":
+                document.write(`${productName}, valor final com 8% de desconto: R$${(productValue - (0.08 * productValue)).toFixed(2)}`);
+                break
+            case "Alimentício":
+                document.write(`${productName}, valor final com 10% de desconto: R$${(productValue - (0.10 * productValue)).toFixed(2)}`);
+                break
+            default:
+                document.write("Tipo de produto inválido!")
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const temp = parseInt(prompt("Informe a temperatura"))
+        const typeConvert = parseInt(prompt("Informe o tipo de conversão:\n\n1- Celsius -> Fahrenheit\n2- Fahrenheit -> Celsius "))
+
+        switch (typeConvert) {
+            case 1:
+                document.write(`Celsius -> Fahrenheit: ${temp * (9 / 5) + 32}`);
+                break
+            case 2:
+                document.write(`Fahrenheit -> Celsius: ${(temp - 32) * (5 / 9)}`);
+                break
+
+            default:
+                document.write("Tipo de conversão não encontrado!")
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

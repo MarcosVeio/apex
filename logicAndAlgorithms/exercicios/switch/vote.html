@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // const vote = parseInt(prompt("Informa o id do candidato que deseja votar:\n\n1- João\n2- Mário\n3- José"))
+        let countVoteJoao = 0
+        let countVoteMario = 0
+        let countVoteJose = 0
+
+        // switch (vote) {
+        //     case 1:
+        //         document.write(`João: ${countVoteJoao += 1}`);
+        //         break
+        //     case 2:
+        //         document.write(`Mário: ${countVoteJoao += 1}`);
+        //         break
+        //     case 3:
+        //         document.write(`José: ${countVoteJoao += 1}`);
+        //         break
+        //     default:
+        //         document.write("Candidato inválido!")
+        // }
+
+        for (let i = 0; i < 3; i++) {
+            const vote = parseInt(prompt("Informa o id do candidato que deseja votar:\n\n1- João\n2- Mário\n3- José"))
+
+            switch (vote) {
+                case 1:
+                    countVoteJoao += 1;
+                    break
+                case 2:
+                    countVoteMario += 1;
+                    break
+                case 3:
+                    countVoteJose += 1;
+                    break
+                default:
+                    alert("Candidato inválido!")
+            }
+
+        }
+        document.write(`João: ${countVoteJoao}<br>Mário: ${countVoteMario}<br>José: ${countVoteJose}`)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
